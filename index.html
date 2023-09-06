@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbs</title>
+    <link type="image/png" sizes="42x43" rel="icon" href="favicon.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <script defer src="js/form-input.js"></script>
+    <script defer src="js/modul-windows.js"></script>
+    <script defer src="js/sponsors-carousel.js"></script>
+    <script defer src="js/custom-slider.js"></script>
+    <script defer src="js/burger.js"></script>
+    <script defer src="js/mobile-sliders.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a class="header__logo" href="#">
+                <img class="header__logo-svg" src="img/svg/logo.svg" alt="HERBS">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a class="header__nav-item-link" href="#catalog">
+                            Каталог
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-item-link" href="#">
+                            Это интересно
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-item-link" href="#news">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-item-link" href="#">
+                            Вопрос-ответ
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-item-link" href="#">
+                            Специалистам
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-item-link" href="#contacts">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="header__phone" href="tel:84959692184">
+                <span class="desktop-sm">
+                    8 (495) 969-21-84
+                </span>
+                <span class="mobile-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                        <use xlink:href="img\sprites.svg#phone" />
+                    </svg>
+                </span>
+            </a>
+            <button class="header__search btn" id="searchOpen">
+                <svg class="header__search-svg" width="24" height="24" viewBox="0 0 24 24" fill="#EF4D9C">
+                    <use xlink:href="img\sprites.svg#search" />
+                </svg>
+            </button>
+
+            <button class="header__burger btn" id="burgerOpen">
+                <svg class="header__search-svg" width="24" height="24" viewBox="0 0 24 24" fill="#EF4D9C">
+                    <use xlink:href="img\sprites.svg#burger" />
+                </svg>
+            </button>
+        </div>
+    </header>
+    <main>
+        <h1 class="hidden">Herbs</h1>
+        <section class="hero" id="hero">
+            <div class="hero__slider" id="heroSlide1">
+                <div class="hero__slider-wrapper">
+                    <!-- Paralax -->
+                    <div class="slider-parallax">
+                        <!-- Most movement -->
+                        <div class="slider-parallax-far">
+                            <svg class="slider-blueoctagon" width="60" height="64" viewBox="0 0 60 64" fill="#5EE5FF" >
+                                <use xlink:href="img\shapes.svg#octagon" />
+                            </svg>
+
+                            <svg class="slider-pinktriangleright" width="60" height="64" viewBox="0 0 60 64" fill="rgba(239,77,156,.50)" >
+                                <use xlink:href="img\shapes.svg#triangle" />
+                            </svg>
+                        </div>
+
+                        <!-- movement -->
+                        <div class="slider-parallax-medium">
+                            <svg class="slider-yellowoctagonleft" width="60" height="64" viewBox="0 0 60 64" fill="#FD0" >
+                                <use xlink:href="img\shapes.svg#octagon" />
+                            </svg>
+                            
+                            <svg class="slider-yellowcircle" width="60" height="64" viewBox="0 0 60 64" fill="#FD0" >
+                                <use xlink:href="img\shapes.svg#circle" />
+                            </svg>
+
+                            <svg class="slider-pinktrianglebottom" width="60" height="64" viewBox="0 0 60 64" fill="rgba(239,77,156,.50)" >
+                                <use xlink:href="img\shapes.svg#triangle" />
+                            </svg>
+
+                            <svg class="slider-greenoctagon" width="60" height="64" viewBox="0 0 60 64" fill="#71BD44" >
+                                <use xlink:href="img\shapes.svg#octagon" />
+                            </svg>
+                        </div>
+
+                        <img class="slider-box" src="img/slider-box.png" alt="Коробка">
+
+                        <!-- Less movement -->
+                        <div class="slider-parallax-close">
+                            <svg class="slider-pinktriangleleft" width="60" height="64" viewBox="0 0 60 64" fill="rgba(239,77,156,.50)" >
+                                <use xlink:href="img\shapes.svg#triangle" />
+                            </svg>
+
+                            <svg class="slider-bluecircle" width="60" height="64" viewBox="0 0 60 64" fill="#5EE5FF" >
+                                <use xlink:href="img\shapes.svg#circle" />
+                            </svg>
+
+                            <svg class="slider-bluetriangle" width="60" height="64" viewBox="0 0 60 64" fill="#5EE5FF" >
+                                <use xlink:href="img\shapes.svg#triangle" />
+                            </svg>
+                        </div>
+
+                        <img class="slider-baby" src="img/slider-baby.png" alt="Ребенок">
+                    </div>
+
+                    <!-- Content -->
+                    <ul class="hero__slider-textfield">
+                        <li class="hero__slider-textblock">
+                            <h2 class="hero__slider-title">
+                                Укрепляем иммунитет вместе 
+                            </h2>
+                            <p class="hero__slider-desc">
+                                Новая формула содержит комплекс пробиотиков, обогащенный цинком и лактоферрином
+                            </p>
+                        </li>
+
+                        <li class="hero__slider-textblock">
+                            <h2 class="hero__slider-title">
+                                Herbs for all
+                            </h2>
+                            <p class="hero__slider-desc">
+                                Комплекс ферментов обогащенных цинком и лактоферрином.
+                            </p>
+                        </li>
+
+                        <li class="hero__slider-textblock">
+                            <h2 class="hero__slider-title">
+                                Herbs for kids
+                            </h2>
+                            <p class="hero__slider-desc">
+                                Комплекс ферментов обогащенных цинком и лактоферрином.
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="hero__slider-primaryblock">
+                        <button class="hero__slider-primary-button btn btn-primary">
+                            Узнать больше
+                        </button>
+                    </div>
+                    <ul class="hero__slider-buttons">
+                        <li class="hero__slider-buttonblock">
+                            <button class="hero__slider-button btn slider-button--active" value="1">
+                                01
+                            </button>
+                        </li>
+                        <li class="hero__slider-buttonblock" >
+                            <button class="hero__slider-button btn" value="2">
+                                02
+                            </button>
+                        </li>
+                        <li class="hero__slider-buttonblock">
+                            <button class="hero__slider-button btn" value="3">
+                                03
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="about__title title-hor">
+                    О компании
+                </h2>
+
+                <div class="about__content">
+                    <ul class="about__list">
+                        <li class="about_item about-natural">
+                            Натуральные игредиенты
+                        </li>
+                        <li class="about_item about-production">
+                            Европейское производство
+                        </li>
+                        <li class="about_item about-ingredients">
+                            Состав, подобранный <br> под возрастную группу
+                        </li>
+                        <li class="about_item about-unique">
+                            Уникальный состав каждого продукта
+                        </li>
+                    </ul>
+        
+                    <div class="about__text">
+                        <p class="big">
+                            Наша продукция разработана с учетом изменения потребностей ребенка от момента зачатия до подросткового возраста, и является лучшим решением всех проблем, с которыми родители и педиатры сталкиваются каждый день. Постоянный поиск инновационных формул, технологий использования современных производственных процессов, информаций и научных исследований позволяют нам создавать качественные продукты, ориентированные на потребности детей.
+                        </p>
+                        <p>
+                            Продукция производится на крупнейших заводах Европы. Технология и условия производства соответствуют высшим международным стандартам качества в фармацевтической промышленности — GMP (Good Manufacturing Practices). 
+                        </p>
+                        <p>
+                            Продукция создана на основе натуральных биологически-активных веществ: лактобактерий, витаминов, минералов и экстрактов целебных растений, подобранных в оптимальных дозировках и сочетаниях, прошла лабораторные исследования на территории РФ и рекомендована к применению ФГБНУ НИИ питания РАМН РФ.
+                        </p>
+                        <button class="about__text-button btn btn-primary">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog" id="catalog">
+            <div class="catalog__container container-fluid">
+                <div class="catalog__slide ver-slide">
+                    <h2 class="catalog__title title-ver">
+                        Каталог продукции
+                    </h2>
+                </div>
+                <ul class="catalog__list">
+                    <li class="catalog__item catalog-prebiotic" id="probio">
+                        <div class="catalog__item-info">
+                            <div class="catalog__item-info-column">
+                                <svg class="catalog__item-svg" xmlns="http://www.w3.org/2000/svg" width="84" height="85" viewBox="0 0 84 85" fill="#89CE60">
+                                    <use xlink:href="img\sprites.svg#catalogprebiotic" />
+                                </svg>
+                                <h3 class="catalog__item-name">
+                                    Пробиотики
+                                </h3>
+                                <a class="catalog__item-mobile" href="#">
+                                    <svg class="catalog__item-mobile-svg" width="12" height="12" viewBox="0 0 12 12" fill="#333">
+                                        <use xlink:href="img\sprites.svg#strelka" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="catalog__item-desc">
+                                Продукты, содержащие как пробиотики, так и пребиотики, оказывающие положительное влияние на состояние здоровья
+                            </p>
+                        </div>
+                        <div class="catalog__item-display">
+                            <img class="catalog__item-image" src="img/box.png" alt="Товар">
+                        </div>
+                        <div class="catalog__item-desktop">
+                            <a class="catalog__item-button btn-secondary" href="#">
+                                Посмотреть
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="catalog__item catalog-mineral" id="mineral">
+                        <div class="catalog__item-info">
+                            <div class="catalog__item-info-column">
+                                <svg class="catalog__item-svg" width="84" height="85" viewBox="0 0 84 85" fill="#FD0" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img\sprites.svg#catalogmineral" />
+                                </svg>
+                                <h3 class="catalog__item-name">
+                                    Минеральные соли
+                                </h3>
+                                <a class="catalog__item-mobile" href="#">
+                                    <svg class="catalog__item-mobile-svg" width="12" height="12" viewBox="0 0 12 12" fill="#333">
+                                        <use xlink:href="img\sprites.svg#strelka" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="catalog__item-desc">
+                                Входя в состав всех клеток, тканей и органов человеческого тела, играют важную роль в жизнедеятельности организма.
+                            </p>
+                        </div>
+
+                        
+                        <div class="catalog__item-display">
+                            <img class="catalog__item-image" src="img/box.png" alt="Товар">
+                        </div>
+                        <div class="catalog__item-desktop">
+                            <button class="catalog__item-button btn btn-secondary">
+                                Посмотреть
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="catalog__item catalog-vitamins" id="vitamins">
+                        <div class="catalog__item-info">
+                            <div class="catalog__item-info-column">
+                                <svg class="catalog__item-svg" width="84" height="85" viewBox="0 0 84 85" fill="#FF49B0" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img\sprites.svg#catalogvitamins" />
+
+                                </svg>
+
+                                <h3 class="catalog__item-name">
+                                    Витаминные комплексы
+                                </h3>
+                                <a class="catalog__item-mobile" href="#">
+                                    <svg class="catalog__item-mobile-svg" width="12" height="12" viewBox="0 0 12 12" fill="#333">
+                                        <use xlink:href="img\sprites.svg#strelka" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="catalog__item-desc">
+                                Избежать гиповитаминоза можно с помощью приема витаминных комплексов. 
+                            </p>
+                        </div>
+                        <div class="catalog__item-display">
+                            <img class="catalog__item-image" src="img/box.png" alt="Товар">
+                        </div>
+                        <div class="catalog__item-desktop">
+                            <button class="catalog__item-button btn btn-secondary">
+                                Посмотреть
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="catalog__item catalog-water" id="water">
+                        <div class="catalog__item-info">
+                            <div class="catalog__item-info-column">
+                                <svg class="catalog__item-svg" width="84" height="85" viewBox="0 0 84 85" fill="#FF9F31" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img\sprites.svg#catalogwater" />
+                                    
+                                </svg>    
+
+                                <h3 class="catalog__item-name">
+                                    Морская вода
+                                </h3>
+                                <a class="catalog__item-mobile" href="#">
+                                    <svg class="catalog__item-mobile-svg" width="12" height="12" viewBox="0 0 12 12" fill="#333">
+                                        <use xlink:href="img\sprites.svg#strelka" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="catalog__item-desc">
+                                Содержит такие полезные минералы, как магний, натрий, кальций, хлорид и сульфат, которые оказывают благотворное влияние на кожу. 
+                            </p>
+                        </div>
+                        <div class="catalog__item-display">
+                            <img class="catalog__item-image" src="img/box.png" alt="Товар">
+                        </div>
+                        <div class="catalog__item-desktop">
+                            <button class="catalog__item-button btn btn-secondary">
+                                Посмотреть
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="news" id="news">
+            <div class="container">
+                <h2 class="news__title title-hor">
+                    Новости
+                </h2>
+                <div class="news__mobile-slider-controls">
+                    <button class="news__mobile-slider-button mobile-slider-button mobile-slider-prev btn" id="newsSliderPrev" disabled>
+                        <svg class="news__mobile-slider-svg" width="24" height="26" viewBox="0 0 24 26" fill="#333">
+                            <use xlink:href="img\sprites.svg#slider-arrow" />
+                        </svg>
+                    </button>
+                    <button class="news__mobile-slider-button mobile-slider-button  btn" id="newsSliderNext">
+                        <svg class="news__mobile-slider-svg" width="24" height="26" viewBox="0 0 24 26" fill="#333">
+                            <use xlink:href="img\sprites.svg#slider-arrow" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="news__mobile-slider">
+                    <ul class="news__list">
+                        <li class="news__item">
+                            <a class="news__item-link" href="#"></a>
+                            <div class="news__item-img">
+                                <img src="img/news-1.webp" alt="Новость">
+                            </div>
+                            <span class="news__item-date">
+                                09.06.2021
+                            </span>
+                            <h3 class="news__item-name">
+                                Современные пробиотики: виды и польза
+                            </h3>
+                            <p class="news__item-text">
+                                Современные аптечные сети предлагают огромный выбор препаратов для профилактики дисбактериоза. Какие комплексы лучше и в чем их польза?
+                            </p>
+                        </li>
+    
+                        <li class="news__item">
+                            <a class="news__item-link" href="#"></a>
+                            <div class="news__item-img">
+                                <img src="img/news-2.webp" alt="Новость">
+                            </div>
+                            <span class="news__item-date">
+                                08.06.2021
+                            </span>
+                            <h3 class="news__item-name">
+                                Как узнать, что микрофлора кишечника нарушена?
+                            </h3>
+                            <p class="news__item-text">
+                                Боли в животе, запоры и вздутие — те проблемы, о которых не принято говорить вслух. Однако эти симптомы могут говорить о начале дисбактериоза.
+                            </p>
+                        </li>
+    
+                        <li class="news__item">
+                            <a class="news__item-link" href="#"></a>
+                            <div class="news__item-img">
+                                <img src="img/news-3.webp" alt="Новость">
+                            </div>
+                            <span class="news__item-date">
+                                04.06.2021
+                            </span>
+                            <h3 class="news__item-name">
+                                Дисбактериоз после родов: причины и решение проблемы
+                            </h3>
+                            <p class="news__item-text">
+                                После родов многие женщины сталкиваются с нарушением баланса кишечной микрофлоры. Как решить эту проблему?
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="specialists" id="specialists">
+            <div class="specialists__container container-fluid">
+                <div class="catalog__slide ver-slide">
+                    <h2 class="catalog__title title-ver">
+                        Специалистам
+                    </h2>
+                </div>
+                <div class="specialists__mobile-slider-controls">
+                    <button class="specialists__mobile-slider-prev mobile-slider-prev mobile-slider-button btn" id="specialistsPrev" disabled>
+                        <svg class="specialists__mobile-slider-svg" width="24" height="26" viewBox="0 0 24 26" fill="#333">
+                            <use xlink:href="img\sprites.svg#slider-arrow" />
+                        </svg>
+                    </button>
+                    <button class="specialists__mobile-slider-next mobile-slider-button btn" id="specialistsNext">
+                        <svg class="specialists__mobile-slider-svg" width="24" height="26" viewBox="0 0 24 26" fill="#333">
+                            <use xlink:href="img\sprites.svg#slider-arrow" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="specialists__mobile-slider">
+                    <ul class="specialists__grid">
+                        <li class="specialists__cell specialists-big specialists-blue">
+                            <img class="specialists__cell-img" src="img/leaf.webp" alt="Изображение">
+    
+                            <div class="specialists__cell-text">
+                                <span class="specialists__cell-date">
+                                    08.06.2021
+                                </span>
+                                <h2 class="specialists__cell-name">
+                                    Новые представления о функциональных расстройствах кишечника и место современных пробиотиков в их лечении. 
+                                </h2>
+                                <button class="specialists__cell-button btn btn-secondary">
+                                    Посмотреть
+                                </button>
+                            </div>
+                        </li>
+    
+                        <li class="specialists__cell specialists-green specialists-end">
+                            <div class="specialists__cell-text">
+                                <span class="specialists__cell-date">
+                                    04.06.2021
+                                </span>
+                                <h2 class="specialists__cell-name">
+                                    Штаммоспецифичность пробиотиков. XVIII Съезд педиатров России с международным участием «Актуальные проблемы педиатрии». 
+                                </h2>
+                                <button class="specialists__cell-button btn btn-secondary">
+                                    Посмотреть
+                                </button>
+                            </div>
+                        </li>
+    
+                        <li class="specialists__cell specialists-yellow specialists-end">
+                            <div class="specialists__cell-text">
+                                <span class="specialists__cell-date">
+                                    08.06.2021
+                                </span>
+                                <h2 class="specialists__cell-name">
+                                    Международный форум «Микробиотические нарушения как междисциплинарная проблема глобального уровня». 
+                                </h2>
+                                <button class="specialists__cell-button btn btn-secondary">
+                                    Посмотреть
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>   
+            </div>
+        </section>
+
+        <section class="sponsors" id="sponsors">
+            <div class="container-fluid">
+                <div class="sponsors__wrapper" >
+                    <div class="sponsors__lists" id="carouselWrapper">
+                        <ul class="sponsors__list" id="carouselDuplicate">
+                            <li class="sponsors__item">
+                                <a class="sponsors__item-link" href="#"></a>
+                                <img class="sponsors__item-img" src="img/sponsor-apteka.webp" alt="Твой Доктор">
+                            </li>
+                            <li class="sponsors__item">
+                                <a class="sponsors__item-link" href="#"></a>
+                                <img class="sponsors__item-img" src="img/sponsor-zdes.webp" alt="Здесь Аптека">
+                            </li>
+                            <li class="sponsors__item">
+                                <a class="sponsors__item-link" href="#"></a>
+                                <img class="sponsors__item-img" src="img/sponsor-pharma.webp" alt="PHARMA">
+                            </li>
+                            <li class="sponsors__item">
+                                <div class="sponsors__item-card">
+                                    <a class="sponsors__item-link" href="#"></a>
+                                    <img class="sponsors__item-img" src="img/sponsor-36-6.webp" alt="36-6">
+                                </div>
+                            </li>
+                            <li class="sponsors__item">
+                                <a class="sponsors__item-link" href="#"></a>
+                                <img class="sponsors__item-img" src="img/sponsor-apple.webp" alt="Аптека Яблоко">
+                            </li>
+                            <li class="sponsors__item">
+                                <a class="sponsors__item-link" href="#"></a>
+                                <img class="sponsors__item-img" src="img/sponsor-rigla.webp" alt="Апрека Ригла">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <form class="footer__form" 
+                method="POST" 
+                action="https://jsonplaceholder.typicode.com/posts">
+                    <p class="footer__form-desc">
+                        Подпишитесь на рассылку новостей Herbs, чтобы получать эксклюзивный контент, предложения и скидки!
+                    </p>
+
+                    <div class="footer__form-row">
+                            <input class="footer__form-input"
+                            id="formEmail"
+                            type="email" 
+                            name="email" 
+                            placeholder="Email"
+                            required>
+
+                            <button class="footer__form-submit btn btn-primary" 
+                            type="submit" id="formEmailButton" disabled>
+                                <span class="desktop">Подписаться</span>
+                                <span class="mobile">
+                                    <svg width="11" height="18" viewBox="0 0 11 18" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img\sprites.svg#strelka" />
+                                    </svg>
+                                </span>
+                            </button>
+                    </div>
+                </form>
+    
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-item-link" href="#">
+                                Это интересно
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-item-link" href="#">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-item-link" href="#">
+                                Вопрос-ответ
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-item-link" href="#">
+                                Карта сайта
+                            </a>
+                        </li>
+
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-item-link" href="#">
+                                Специалистам
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-item-link" href="#">
+                                Где купить
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-item-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a class="footer__nav-item-link" href="#">
+                                Конфиденциальность
+                            </a>
+                        </li>
+
+                        <li class="footer__nav-item footer__nav-big">
+                            <a class="footer__nav-item-link" href="#">
+                                Каталог
+                            </a>
+
+                            <ul class="footer__nav-secondlist">
+                                <li class="footer__nav-seconditem">
+                                    <a class="footer__nav-seconditem-link" href="#">
+                                        Пробиотики
+                                    </a>
+                                </li>
+                                <li class="footer__nav-seconditem">
+                                    <a class="footer__nav-seconditem-link" href="#">
+                                        Минеральные соли
+                                    </a>                        
+                                </li>
+                                <li class="footer__nav-seconditem">
+                                    <a class="footer__nav-seconditem-link" href="#">
+                                        Витаминные комплексы
+                                    </a>                           
+                                </li>
+                                <li class="footer__nav-seconditem">
+                                    <a class="footer__nav-seconditem-link" href="#">
+                                        Морская вода
+                                    </a>      
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    
+                </nav>
+            </div>
+
+            <div class="footer__row">
+                <ul class="footer__social">
+                    <li class="footer__social-item">
+                        <a class="footer__social-item-link" href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img\sprites.svg#vk" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-item-link" href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img\sprites.svg#ok" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-item-link" href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img\sprites.svg#fb" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-item-link" href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img\sprites.svg#insta" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-item-link" href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img\sprites.svg#tweet" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-item-link" href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img\sprites.svg#yt" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__row">
+                <p class="footer__copyright">
+                    © 2008-2021 herbs
+                </p>
+
+                <address class="footer__address">
+                    105000, Российская Федерация, г. Москва, ул. Бауманская 2-ая, д.7, стр. 1
+                </address>
+
+                <a class="footer__developer" href="#">
+                    Разработка сайта - InterLabs
+                </a>
+            </div>
+        </div>
+        <div class="footer__up">
+            <a class="footer__up-link" href="#">
+                Вверх
+            </a>
+        </div>
+    </footer>
+
+    <!-- Modul Windows -->    
+    <button class="btn feedback-btn" id="feedbackOpen" >
+        <span class="desktop-sm">
+            Обратная связь
+        </span>
+        <span class="mobile-sm">
+            <svg width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg)">
+                <use xlink:href="img\sprites.svg#email" />
+            </svg>
+        </span>
+    </button>
+    <div class="on-screen">
+        <div id="bodyBlock">  
+        </div>
+    <!-- Searchfield -->
+    <div class="modul__searchfield js-modul" id="modulSearchfield">
+        <div class="modul__searchfield-container container">
+            <span  class="modul__searchfield-text">
+                Поиск по сайту:
+            </span>
+            <div class="modul__searchfield-group">
+                <form class="modul__searchfield-form" method="GET">
+                    <input class="modul__searchfield-input" type="text" placeholder="например, прибиотики">
+                    <button class="modul__searchfield-submit btn btn-primary" type="submit">
+                        Найти
+                    </button>
+                </form>
+            </div>
+            <button class="modul__searchfield-close btn" id="searchClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#333333" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img\sprites.svg#close" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- feedback -->
+    <div class="modul__feedback js-modul" id="modulFeedback">
+        <button class="feedback-btn btn" id="feedbackClose">
+            <span class="desktop-sm">
+                <svg width="11" height="18" viewBox="0 0 11 18" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img\sprites.svg#arrow" />
+                </svg>
+            </span>
+
+            <span class="mobile-sm">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#EF4D9C" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img\sprites.svg#close" />
+                </svg>
+            </span>
+        </button>
+
+        <form class="modul__feedback-form" method="POST" action="https://jsonplaceholder.typicode.com/posts">
+            <span class="modul__feedback-title">
+                Обратная связь
+            </span>
+            <label class="modul__feedback-block">
+                <input class="modul__feedback-input" type="text" name="name" required>
+                <span class="modul__feedback-placeholder feedback-required">
+                    Ваше имя
+                </span>      
+            </label>
+            <label class="modul__feedback-block">
+                <input class="modul__feedback-input" type="tel" name="phone" required>
+                <span class="modul__feedback-placeholder feedback-required">
+                    Телефон
+                </span>      
+            </label>
+            <label class="modul__feedback-block">
+                <input class="modul__feedback-input" type="email" name="email">
+                <span class="modul__feedback-placeholder">
+                    Email
+                </span>      
+            </label>
+            <label class="modul__feedback-block">
+                <textarea class="modul__feedback-textarea" name="text"></textarea>
+                <span class="modul__feedback-placeholder">
+                    Сообщение
+                </span>      
+            </label>
+            <label class="modul__feedback-checkblock">
+                <input class="modul__feedback-chbx" type="checkbox" required checked>
+                <div class="modul__feedback-checkbox"></div>
+                <p class="modul__feedback-text">
+                    Согласие на обработку персональных данных <br> и с Политикой конфиденциальности
+                </p>
+            </label>
+            <button class="modul__feedback-submit btn btn-primary" type="submit">
+                Отправить
+            </button>
+        </form>
+    </div>
+
+    <!-- burger -->
+    <nav class="modul__nav" id="burger">
+        <button class="header__nav-close-burger btn"  id="burgerClose">
+            <svg class="header__burger-svg" width="24" height="24" viewBox="0 0 24 24" fill="#EF4D9C">
+                <use xlink:href="img\sprites.svg#close" />
+            </svg>
+        </button>
+        <ul class="header__nav-list">
+            <li class="header__nav-item-secondary">
+                <button class="secondary-list btn">
+                    Каталог
+                </button>
+                <ul class="header__nav-item-list">
+                    <li class="header__nav-item-item">
+                        <a class="header__nav-item-link" href="#probio">
+                            Пробиотики
+                        </a>
+                    </li>
+                    <li class="header__nav-item-item">
+                        <a class="header__nav-item-link" href="#mineral">
+                            Минеральные соли
+                        </a>
+                    </li>
+                    <li class="header__nav-item-item">
+                        <a class="header__nav-item-link" href="#vitamins">
+                            Витаминные комплексы
+                        </a>
+                    </li>
+                    <li class="header__nav-item-item">
+                        <a class="header__nav-item-link" href="#water">
+                            Морская вода
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="header__nav-item">
+                <a class="header__nav-item-link" href="#">
+                    Это интересно
+                </a>
+            </li>
+            <li class="header__nav-item">
+                <a class="header__nav-item-link" href="#news">
+                    Новости
+                </a>
+            </li>
+            <li class="header__nav-item">
+                <a class="header__nav-item-link" href="#">
+                    Вопрос-ответ
+                </a>
+            </li>
+            <li class="header__nav-item">
+                <a class="header__nav-item-link" href="#specialists">
+                    Специалистам
+                </a>
+            </li>
+            <li class="header__nav-item">
+                <a class="header__nav-item-link" href="#contacts">
+                    Контакты
+                </a>
+            </li>
+        </ul>
+    </nav>
+    </div> 
+</body>
+</html>
